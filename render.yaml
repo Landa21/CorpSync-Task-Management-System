@@ -24,8 +24,7 @@ services:
         fromService:
           type: web
           name: corpsync-backend
-          property: host
-        value: "" # This will be appended with /api in the context
+          envVarKey: RENDER_EXTERNAL_URL
     routes:
       - type: rewrite
         source: /*
