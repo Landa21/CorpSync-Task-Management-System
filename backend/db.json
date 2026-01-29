@@ -1,0 +1,59 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Super Admin",
+      "email": "super@corporate.com",
+      "password": "$2b$10$UlT486hw5zAJd641yew1/eQtGvjirMV329QEXsb8YylZ.sI.FMJiC",
+      "role": "SUPER_ADMIN",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Lucky"
+    },
+    {
+      "id": "2",
+      "name": "Sarah Manager",
+      "email": "sarah@corporate.com",
+      "password": "$2b$10$yFG/Ncv1IQGhLw6lzQPBLuY0X3dQmKCtGbglAkSeC3wg4W9d2HpT2",
+      "role": "ADMIN_MANAGER",
+      "departmentId": "dept-1",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah",
+      "github": "sarah-codes"
+    },
+    {
+      "id": "3",
+      "name": "John Doe",
+      "email": "john@corporate.com",
+      "password": "$2b$10$YsyHKkrF1Ze8ljcej3E3ZOLZVZfSdi0d6Rtc3ifR9brNEn4xxZIy2",
+      "role": "EMPLOYEE",
+      "departmentId": "dept-1",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=John",
+      "github": "johndoe-dev"
+    },
+    {
+      "id": "4",
+      "name": "Michael Scott",
+      "email": "michael@corporate.com",
+      "password": "$2b$10$ou1OBB794qUi3RjqLY5tiOTOS6YYY3DAE72tpBuWX13eB0QTFPpja",
+      "role": "ADMIN_MANAGER",
+      "departmentId": "dept-2",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Michael"
+    },
+    {
+      "id": "5",
+      "name": "Pam Beesly",
+      "email": "pam@corporate.com",
+      "password": "$2b$10$o1Qwoec/.ACEWlDNcH9xM.6aBhU6RLe.3mCZ8ChCU9ZQQ05dSDQ2O",
+      "role": "EMPLOYEE",
+      "departmentId": "dept-2",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Pam"
+    },
+    {
+      "id": "6",
+      "name": "Kelly Design",
+      "email": "kelly@corporate.com",
+      "password": "$2b$10$UfiyQo2wJgvStbzdoKqs2.3sRxb2tS8F7YKgrOxFcL4W/U8YOHbl.",
+      "role": "ADMIN_MANAGER",
+      "departmentId": "dept-3",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Kelly"
+    }
+  ]
+}
