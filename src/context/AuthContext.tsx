@@ -9,7 +9,15 @@ interface AuthContextType {
     loading: boolean;
 }
 
-const API_URL = 'http://localhost:5000/api';
+const getApiUrl = () => {
+    const envUrl = import.meta.env.VITE_API_URL;
+    if (envUrl) {
+        return envUrl.endsWith('/api') ? envUrl : `${envUrl}/api`;
+    }
+    return 'http://localhost:5000/api';
+};
+
+const API_URL = getApiUrl();
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 

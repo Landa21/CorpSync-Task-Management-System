@@ -1,0 +1,32 @@
+services:
+  # Backend Service
+  - type: web
+    name: corpsync-backend
+    runtime: node
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm start
+    envVars:
+      - key: PORT
+        value: 5000
+      - key: JWT_SECRET
+        generateValue: true
+      - key: NODE_ENV
+        value: production
+
+  # Frontend Service
+  - type: static
+    name: corpsync-frontend
+    runtime: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: VITE_API_URL
+        fromService:
+          type: web
+          name: corpsync-backend
+          property: host
+        value: "" # This will be appended with /api in the context
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
