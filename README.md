@@ -193,8 +193,3 @@ Demo account passwords are for local development only; do not reuse them in prod
 The backend uses plain file storage; it is not suitable for production as-is.
 License
 No license file is bundled. Add a LICENSE file if you intend to open-source or distribute this project.
-If you want, I can:
-
-Add a small .env.example file to the repo contents.
-Add a simple README badge or a GitHub Actions workflow for CI.
-Provide a short postman collection for the API endpoints.
