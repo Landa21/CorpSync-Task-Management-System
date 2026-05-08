@@ -7,15 +7,23 @@
       "config": {
         "distDir": "frontend/dist"
       }
+    },
+    {
+      "src": "backend/server.js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "src": "(.*)",
+      "src": "/api/(.*)",
+      "dest": "backend/server.js"
+    },
+    {
+      "src": "/(.*)",
       "dest": "frontend/dist/$1"
     }
   ],
   "env": {
-    "VITE_API_URL": "https://corpsync-backend.onrender.com"
+    "VITE_API_URL": "https://corpsync-task-management-system-5.onrender.com"
   }
 }
