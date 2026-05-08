@@ -8,7 +8,10 @@ require('dotenv').config();
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({ origin: '*' }));
+
+// Health check for Render
+app.get('/health', (req, res) => res.status(200).json({ status: 'ok' }));
 
 const PORT = process.env.PORT || 5000;
 const DB_PATH = path.join(__dirname, 'db.json');
