@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "installCommand": "npm run install:all",
+  "installCommand": "npm install",
   "buildCommand": "cd frontend && npm run build",
   "builds": [
     {
